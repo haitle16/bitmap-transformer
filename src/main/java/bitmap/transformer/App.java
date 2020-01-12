@@ -15,12 +15,19 @@ public class App {
 
     public static void main(String[] args) throws IOException {
 //        File inputFile = new File("./assets/mario.bmp");
-        File outputFile = new File("./assets/outputMario.bmp");
+        String outputPath = "./assets/";
+        String inputPath = "./assets/mario.bmp";
 //        Bitmap image = new Bitmap(inputFile, outputFile, "Change");
-//
-//        System.out.println(image);
-        BufferedImage image = ImageIO.read(new File("./assets/mario.bmp"));
-        ImageIO.write(image, "png", outputFile);
+//        BufferedImage image = ImageIO.read(new File("./assets/mario.bmp"));
+//        ImageIO.write(image, "png", outputFile);
+//        Bitmap createGreyScale = new Bitmap(inputPath, outputPath, "greyScale.bmp");
+//        createGreyScale.greyScale();
+
+//        Bitmap createMirror = new Bitmap(inputPath, outputPath, "mirror.bmp");
+//        createMirror.mirror();
+
+        Bitmap yellify = new Bitmap(inputPath, outputPath, "yellify.bmp");
+        yellify.yellify();
 
 
 
